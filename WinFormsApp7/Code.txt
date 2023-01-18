@@ -1,0 +1,229 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using WinFormsApp7;
+
+namespace WinFormsApp7
+{
+    [Serializable]
+    class Employee
+    {
+
+        public string ID { set; get; }
+        public string Name { set; get; }
+        public string Gender { set; get; }
+        public string Department { set; get; }
+        public List<string> Projects { set; get; }
+
+
+        public Employee(string iD, string name, string gender, string department, List<string> projects)
+        {
+            ID = iD;
+            Name = name;
+            Gender = gender;
+            Department = department;
+            Projects = projects;
+        }
+
+        [STAThread]
+        static void Main()
+        {
+            Application.SetHighDpiMode(HighDpiMode.SystemAware);
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Form1());
+        }
+    }
+}
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+
+
+namespace WinFormsApp7
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            string ID = "";
+            string Name = "";
+            string Department = "";
+            string Gender = "";
+            List <string> Projects = new List<string>();
+
+            FileStream fs = new FileStream("Em.txt", FileMode.Append);
+            BinaryFormatter formatter = new BinaryFormatter();
+
+            ID = Txt_id.Text;
+            Name = txt_name.Text;
+            
+            if (radio_male.Checked)
+                Gender = radio_male.Text;
+            else if (radio_female.Checked)
+                Gender = radio_female.Text;
+            Department = cmb_department.SelectedItem.ToString();
+            
+            foreach (string item in checkedListBox1_Project.CheckedItems)
+            {
+                Projects.Add(item);
+            }
+            
+
+            Employee F = new Employee(ID, Name, Gender, Department, Projects);
+            formatter.Serialize(fs, F);
+            MessageBox.Show("User added successfully !");
+            fs.Close();
+
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ShowForm f = new ShowForm();
+            f.Show();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            DisplayForm a = new DisplayForm();
+            a.Show();
+
+
+        }
+
+    }
+}
+
+
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Text;
+using System.Windows.Forms;
+
+namespace WinFormsApp7
+{
+    public partial class ShowForm : Form
+    {
+        public ShowForm()
+        {
+            InitializeComponent();
+        }
+
+        private void ShowForm_Load(object sender, EventArgs e)
+        {
+
+            this.employeeData.Columns["name"].Visible = false;
+            this.employeeData.Columns["ID"].Visible = false;
+            this.employeeData.Columns["Department"].Visible = false;
+            this.employeeData.Columns["Gender"].Visible = false;
+            this.employeeData.Columns["Project"].Visible = false;
+
+            BinaryFormatter f = new BinaryFormatter();
+            List<Employee> emp_list = new List<Employee>();
+
+            FileStream w = new FileStream("Data.txt", FileMode.Open);
+
+            while (w.Position < w.Length) {
+                Employee emp = (Employee)f.Deserialize(w);
+                emp_list.Add(emp);
+            }
+            employeeData.DataSource = emp_list;
+            w.Close();
+        }
+
+    }
+}
+
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Text;
+using System.Windows.Forms;
+
+namespace WinFormsApp7
+{
+    public partial class DisplayForm : Form
+    {
+        public DisplayForm()
+        {
+            InitializeComponent();
+        }
+        private void Form3_Load(object sender, EventArgs e)
+        {
+            BinaryFormatter f = new BinaryFormatter();
+            List<Employee> emp_list = new List<Employee>();
+
+            FileStream n = new FileStream("Data.txt", FileMode.Open);
+
+            while (n.Position < n.Length)
+            {
+                Employee emp2 = (Employee)f.Deserialize(n);
+                emp_list.Add(emp2);
+            }
+            ResultData.DataSource = emp_list;
+            n.Close();
+        }
+        private void Search_Click(object sender, EventArgs e)
+        {
+            this.ResultData.Columns["name"].Visible = false;
+            this.ResultData.Columns["Department"].Visible = false;
+            this.ResultData.Columns["Gender"].Visible = false;
+            this.ResultData.Columns["IID"].Visible = false;
+
+            string Selectedname = S_name.Text.ToString();
+            string SelectedDep = S_Dep.Text.ToString();
+            string SelectedPJ = S_Proj.Text.ToString();
+            string SelectedId = S_id.Text.ToString();
+
+            FileStream fs = new FileStream("Data.txt", FileMode.Open);
+            BinaryFormatter bf = new BinaryFormatter();
+            List<Employee> filter = new List<Employee>();
+
+            while (fs.Position != fs.Length)
+            {
+                Employee em = (Employee)bf.Deserialize(fs);
+                if (em.Name.Equals(Selectedname) || (em.ID.Equals(SelectedId)) || (em.Department.Equals(SelectedDep)) || (em.Projects.Equals(SelectedPJ)))
+                {
+                    filter.Add(em);
+                }
+            }
+            ResultData.DataSource = filter;
+            fs.Close();
+
+
+        }
+
+}
+}

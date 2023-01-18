@@ -1,0 +1,35 @@
+C:\Users\Ahmed Abd El-Aziz\source\repos\WinFormsApp7\WinFormsApp7\obj\Debug\netcoreapp3.1\WinFormsApp7.csproj.AssemblyReference.cache
+C:\Users\Ahmed Abd El-Aziz\source\repos\WinFormsApp7\WinFormsApp7\obj\Debug\netcoreapp3.1\WinFormsApp7.Form1.resources
+C:\Users\Ahmed Abd El-Aziz\source\repos\WinFormsApp7\WinFormsApp7\obj\Debug\netcoreapp3.1\WinFormsApp7.ShowForm.resources
+C:\Users\Ahmed Abd El-Aziz\source\repos\WinFormsApp7\WinFormsApp7\obj\Debug\netcoreapp3.1\WinFormsApp7.csproj.GenerateResource.cache
+C:\Users\Ahmed Abd El-Aziz\source\repos\WinFormsApp7\WinFormsApp7\obj\Debug\netcoreapp3.1\WinFormsApp7.AssemblyInfoInputs.cache
+C:\Users\Ahmed Abd El-Aziz\source\repos\WinFormsApp7\WinFormsApp7\obj\Debug\netcoreapp3.1\WinFormsApp7.AssemblyInfo.cs
+C:\Users\Ahmed Abd El-Aziz\source\repos\WinFormsApp7\WinFormsApp7\obj\Debug\netcoreapp3.1\WinFormsApp7.csproj.CoreCompileInputs.cache
+C:\Users\Ahmed Abd El-Aziz\source\repos\WinFormsApp7\WinFormsApp7\bin\Debug\netcoreapp3.1\WinFormsApp7.exe
+C:\Users\Ahmed Abd El-Aziz\source\repos\WinFormsApp7\WinFormsApp7\bin\Debug\netcoreapp3.1\WinFormsApp7.deps.json
+C:\Users\Ahmed Abd El-Aziz\source\repos\WinFormsApp7\WinFormsApp7\bin\Debug\netcoreapp3.1\WinFormsApp7.runtimeconfig.json
+C:\Users\Ahmed Abd El-Aziz\source\repos\WinFormsApp7\WinFormsApp7\bin\Debug\netcoreapp3.1\WinFormsApp7.runtimeconfig.dev.json
+C:\Users\Ahmed Abd El-Aziz\source\repos\WinFormsApp7\WinFormsApp7\bin\Debug\netcoreapp3.1\WinFormsApp7.dll
+C:\Users\Ahmed Abd El-Aziz\source\repos\WinFormsApp7\WinFormsApp7\bin\Debug\netcoreapp3.1\WinFormsApp7.pdb
+C:\Users\Ahmed Abd El-Aziz\source\repos\WinFormsApp7\WinFormsApp7\obj\Debug\netcoreapp3.1\WinFormsApp7.dll
+C:\Users\Ahmed Abd El-Aziz\source\repos\WinFormsApp7\WinFormsApp7\obj\Debug\netcoreapp3.1\WinFormsApp7.pdb
+C:\Users\Ahmed Abd El-Aziz\source\repos\WinFormsApp7\WinFormsApp7\obj\Debug\netcoreapp3.1\WinFormsApp7.genruntimeconfig.cache
+C:\Users\Ahmed Abd El-Aziz\source\repos\WinFormsApp7\WinFormsApp7\obj\Debug\netcoreapp3.1\WinFormsApp7.DisplayForm.resources
+C:\Users\Dell\Downloads\Assignment\WinFormsApp7\WinFormsApp7\bin\Debug\netcoreapp3.1\WinFormsApp7.exe
+C:\Users\Dell\Downloads\Assignment\WinFormsApp7\WinFormsApp7\bin\Debug\netcoreapp3.1\WinFormsApp7.deps.json
+C:\Users\Dell\Downloads\Assignment\WinFormsApp7\WinFormsApp7\bin\Debug\netcoreapp3.1\WinFormsApp7.runtimeconfig.json
+C:\Users\Dell\Downloads\Assignment\WinFormsApp7\WinFormsApp7\bin\Debug\netcoreapp3.1\WinFormsApp7.runtimeconfig.dev.json
+C:\Users\Dell\Downloads\Assignment\WinFormsApp7\WinFormsApp7\bin\Debug\netcoreapp3.1\WinFormsApp7.dll
+C:\Users\Dell\Downloads\Assignment\WinFormsApp7\WinFormsApp7\bin\Debug\netcoreapp3.1\WinFormsApp7.pdb
+C:\Users\Dell\Downloads\Assignment\WinFormsApp7\WinFormsApp7\obj\Debug\netcoreapp3.1\WinFormsApp7.csproj.AssemblyReference.cache
+C:\Users\Dell\Downloads\Assignment\WinFormsApp7\WinFormsApp7\obj\Debug\netcoreapp3.1\WinFormsApp7.Form1.resources
+C:\Users\Dell\Downloads\Assignment\WinFormsApp7\WinFormsApp7\obj\Debug\netcoreapp3.1\WinFormsApp7.ShowForm.resources
+C:\Users\Dell\Downloads\Assignment\WinFormsApp7\WinFormsApp7\obj\Debug\netcoreapp3.1\WinFormsApp7.DisplayForm.resources
+C:\Users\Dell\Downloads\Assignment\WinFormsApp7\WinFormsApp7\obj\Debug\netcoreapp3.1\WinFormsApp7.csproj.GenerateResource.cache
+C:\Users\Dell\Downloads\Assignment\WinFormsApp7\WinFormsApp7\obj\Debug\netcoreapp3.1\WinFormsApp7.AssemblyInfoInputs.cache
+C:\Users\Dell\Downloads\Assignment\WinFormsApp7\WinFormsApp7\obj\Debug\netcoreapp3.1\WinFormsApp7.AssemblyInfo.cs
+C:\Users\Dell\Downloads\Assignment\WinFormsApp7\WinFormsApp7\obj\Debug\netcoreapp3.1\WinFormsApp7.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Downloads\Assignment\WinFormsApp7\WinFormsApp7\obj\Debug\netcoreapp3.1\WinFormsApp7.dll
+C:\Users\Dell\Downloads\Assignment\WinFormsApp7\WinFormsApp7\obj\Debug\netcoreapp3.1\WinFormsApp7.pdb
+C:\Users\Dell\Downloads\Assignment\WinFormsApp7\WinFormsApp7\obj\Debug\netcoreapp3.1\WinFormsApp7.genruntimeconfig.cache
+C:\Users\Dell\Downloads\Assignment\WinFormsApp7\WinFormsApp7\obj\Debug\netcoreapp3.1\WinFormsApp7.GeneratedMSBuildEditorConfig.editorconfig
